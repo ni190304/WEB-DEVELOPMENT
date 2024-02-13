@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container my-2">
+        <div class="justify-content-center align-items-center text-center py-5">
+            <h1>Express your thoughts</h1>
+        </div>
+        <form action="/your_blogs" method="POST">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="true">
+                    Enter the Blog Type
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Politics</a></li>
+                    <li><a class="dropdown-item" href="#">Sports</a></li>
+                    <li><a class="dropdown-item" href="#">World</a></li>
+                    <li><a class="dropdown-item" href="#">Tourism</a></li>
+                </ul>
+            </div>
+            <div class="mb-3 my-5">
+                <label for="exampleInputEmail1" class="form-label">Blog Title</label>
+                <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Eg. Travel Plan" name="title">
+
+            </div>
+            <div class="mb-3 my-6">
+                <label for="exampleTextarea" class="form-label">Blog Content</label>
+                <textarea style="height: 250px;" class="form-control" id="exampleTextarea"
+                    placeholder="Your blog content goes here..." name="content" cols="50"></textarea>
+            </div>
+
+            <div class="my-4">
+                <button type="submit" class="btn btn-success">Upload the Blog</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

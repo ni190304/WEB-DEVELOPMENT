@@ -1,0 +1,21 @@
+ol{
+    margin-left: -40px;
+    margin-top: -20px;
+    list-style-position: inside;
+}
+
+p{
+    color: red;
+}
+
+.note{
+    font-size: 19px;
+}
+
+#id-sel-demo{
+    color: green;
+}
+
+li[value]{
+    color: blue;
+}
