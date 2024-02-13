@@ -14,7 +14,7 @@ function Maths() {
             <img className='food-img' src={img + "?grayscale"} alt="heyy" />
             <h1>Hello {`${fname} ${lname}`}</h1>
             <p>Your lucky number is {Math.floor(Math.random() * 3)}</p>
-            <h2>Created by {fname}</h2>
+            <h2>Created by {fname} {lname}</h2>
             <p>Copyright {year}</p>
         </div>
     )
