@@ -1,21 +1,12 @@
 import '../App.css';
 import Login from './Login';
 
-var is_loggedin = false;
-
-function render_cond() {
-  if (is_loggedin) {
-    return <p>Hello</p>
-  }
-  else {
-   return <Login/>
-  }
-}
+var is_Registered = false;
 
 function App() {
   return (
     <div className="container">
-      {render_cond()}
+      <Login isRegistered = {is_Registered}/>
     </div>
   );
 }
