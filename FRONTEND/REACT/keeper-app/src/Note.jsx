@@ -12,10 +12,10 @@ function createQues(question) {
 
 function Note() {
     return (
-        <div className="box">
-
-            {questions.map(createQues)}
-
+        <div className="boxstyle">
+            <div className="box">
+                {questions.map(createQues)}
+            </div>
         </div>
     )
 }

@@ -19,6 +19,11 @@ const questions = [
         key: 4,
         ques: 'Who painted the Mona Lisa?',
         ans: 'Leonardo da Vinci'
+    },
+    {
+        key: 5,
+        ques: 'Who painted the Mona Lisa?',
+        ans: 'Leonardo da Vinci Hello William Shakespeare William Shakespeare William Shakespeare'
     }
 ];
 
