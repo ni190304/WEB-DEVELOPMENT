@@ -1,10 +1,21 @@
 import React from 'react';
+import questions from './questions';
+import Question from './Question';
+
+function createQues(question) {
+    return (
+        <Question ques={question.ques} ans={question.ans} />
+
+
+    );
+}
 
 function Note() {
     return (
-        <div className='note'>
-            <h1>This is the title</h1>
-            <p>This is the content</p>
+        <div className="box">
+
+            {questions.map(createQues)}
+
         </div>
     )
 }

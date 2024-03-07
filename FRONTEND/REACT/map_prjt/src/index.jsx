@@ -8,6 +8,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 var numbers = [3, 51, 7, 48, 9];
 
+const newnumbers = numbers.map((x) => x * x)
+
+console.log(newnumbers);
+
+
+
 
 //////   MAP   /////////
 
