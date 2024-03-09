@@ -2,19 +2,15 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [fullName, setName] = useState({
+  const [fullName, setContact] = useState({
     fName: "",
     lName: "",
+    email: "",
   });
 
   function handleChange(event) {
     const { value, name } = event.target;
-
-    if (name === "fName") {
-      setName({ fName: value, lName: fullName.lName });
-    } else if (name === "lName") {
-      setName({ lName: value, fName: fullName.fName });
-    }
+    setContact(prevValue => ({ ...prevValue, [name]: value }));
   }
 
 
@@ -22,6 +18,7 @@ function App() {
   return (
     <div className="container">
       <h1>Hello {fullName.fName} {fullName.lName}</h1>
+      <p>{fullName.email}</p>
       <form>
         <input
           type="text"
@@ -36,6 +33,14 @@ function App() {
           placeholder="Last name"
           onChange={handleChange}
           value={fullName.lName}
+
+        />
+        <input
+          type="text"
+          name='email'
+          placeholder="Email"
+          onChange={handleChange}
+          value={fullName.email}
 
         />
         <button type="submit">Submit</button>

@@ -11,22 +11,7 @@ root.render(
   </React.StrictMode>
 );
 
-const citrus = ["Lime", "Lemon", "Orange"];
-const fruits = ["Apple", ...citrus, "Banana", "Coconut"];
-
-console.log(fruits);
-
-const fullName = {
-  fName: "Nihaal",
-  lName: "Naresh"
-}
-
-const user = {
-  ...fullName, 
-  id: 1,
-  username:"ni190304"
-}
-
-console.log(user);
-
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
